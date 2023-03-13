@@ -1,0 +1,37 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+<ion-content>
+  <div class="body">
+    <form [formGroup]="signup" #form="ngForm">
+      <h2 style="font-weight: bold;">Sign Up Form</h2>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">
+            Username
+          </ion-label>
+          <ion-input type="text" formControlName="username">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">
+            Password
+          </ion-label>
+          <ion-input type="Password" formControlName="password">
+          </ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button (click)="signupBtn()" [disabled]="!form.valid">Get Started</ion-button>
+      <div>
+        <p style="font-weight: bold;">Already an account?</p>
+        <a routerLink="/login">Click here</a>
+      </div>
+
+    </form>
+  </div>

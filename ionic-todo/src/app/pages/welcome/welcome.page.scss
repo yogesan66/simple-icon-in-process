@@ -1,0 +1,56 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+ion-slide{
+    padding:10rem 1rem 5rem 1rem;
+    display: block;
+    // background-color: rgba(124,74,228,0.81);
+}
+h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+p{
+    font-size: 1.3rem;
+}
+blockquote{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.slide{
+        background-color: rgba(124,74,228,0.81);
+        height:60vh;
+        border-radius: 0rem 0rem 15rem 15rem;
+        color:white;
+
+}
+.body{
+    width:auto;
+    height:100vh;
+    background-color:#1c1c1c;
+    
+}
+ion-button{
+    --color:white ;
+    --background: rgba(124,74,228,0.81) ;
+    --background-hover:    box-shadow: inset 20rem 0rem rgba(124,74,228,0.81);
+    --font-size:1.3rem;
+    --font-weight:bold
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:2rem;
+    gap:1rem;
+}
+// ::ng-deep :host{
+//     font-size: 5rem !important;
+// }
+// ion-button:hover{
+//     color:white;
+//     box-shadow: inset 20rem 0rem rgba(124,74,228,0.81);
+//     transition: all 1s ease-in-out;
+// }

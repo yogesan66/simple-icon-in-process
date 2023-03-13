@@ -1,0 +1,28 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>welcome</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="body">
+    <div class="slide">
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+          <h2>Welcome to my app</h2>
+          <p>Let's get started</p>
+        </ion-slide>
+        <ion-slide>
+          <blockquote>" Everything is easy , once you learnt it. "</blockquote>
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+    <div class="btns">
+      <ion-button (click)="login()">Log in</ion-button>
+      <ion-button (click)="signup()">Sign up</ion-button>
+
+    </div>
+  </div>
+
+</ion-content>

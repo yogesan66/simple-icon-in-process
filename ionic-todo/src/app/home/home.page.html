@@ -1,0 +1,60 @@
+<!-- <ion-content>
+  <div class="body">
+    <span class="name">Hi {{username}} !</span>
+    <span>Welcome to my website</span>
+    <ion-button (click)="signOut()">Sign Out</ion-button>
+  </div>
+
+</ion-content> -->
+
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="toolbar" >
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding sub"><ion-button (click)="signOut()">Sign Out</ion-button></ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-content class="ion-padding">
+      <div class="content">
+        <!-- <div> -->
+        <ion-item fill="outline">
+          <label >
+            <ion-input placeholder="Enter a task"  type="text" [(ngModel)]="task">
+            </ion-input>
+          </label>
+        </ion-item>
+        <ion-button (click)="add()">Add</ion-button>
+      <!-- </div> -->
+      <div class="tasks" *ngFor="let tasks of tasksList;let i = index">
+        <!-- <span class="task">{{task}}</span>
+        <ion-button><ion-icon name="thumbs-up-outline"></ion-icon></ion-button>
+        <!-- <ion-button><ion-icon name="thumbs-down-outline"></ion-icon></ion-button> -->
+
+        <!-- <span>delete</span> -->
+        <!-- <ion-button><ion-icon name="trash-outline"></ion-icon></ion-button> -->
+        <span class="task">{{tasks.task}}</span>
+        <span class="btns">
+        <ion-button><ion-icon name="thumbs-up-outline"></ion-icon></ion-button>
+        <!-- <ion-button><ion-icon name="thumbs-down-outline"></ion-icon></ion-button> -->
+
+        <!-- <span>delete</span> -->
+        <ion-button (click)="delete(i)"><ion-icon name="trash-outline"></ion-icon></ion-button>
+        </span>
+
+      </div>
+      </div>
+    </ion-content>
+
+</div>
